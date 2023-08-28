@@ -39,24 +39,117 @@ text-align: center;
   
   }
   .d{
+   position:relative;
+  }
+  .s{
+    color:blue;
+    border: 2px solid blue;
+    height:19px;
+    width:230px;
+    position:absolute;
+    top:315px;
+    padding-top:7px;
+    padding-bottom:7px;
+    font-size:17px;
+    margin-left:63px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .p{
+    text-align: center;
+   visibility:hidden;
    
   }
-
+  .pp{
+   margin-left:110px;
+   position: absolute;
+   top:360px;
+   
+  }
+   
+    
+  
+  input[type=password] {
+  width: 150px;
+  height:32px;
+  left:100px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-left: 1px;
+  margin-left:10px;
+  position: absolute;
+  top:380px;
+  font-weight:bold;
+  font-size: 17px;
+}
+.uu{
+  margin-left:110px;
+   position: absolute;
+   top:420px;
+}
+input[type=password].k{
+  width: 150px;
+  height:32px;
+  left:100px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-left: 1px;
+  margin-left:10px;
+  position: absolute;
+  top:440px;
+  font-weight: bold;
+}
+.n{
+  position: absolute ;
+  height:38px;
+  width:150px;
+  background-color:#51B1FEff;
+  border:none;
+  color:white;
+  border-radius:15px;
+  top:485px;
+  left:110px;
+  font-weight: bold;
+  font-size:17px;
+}
 </style>
 <body>
 <p class="a">SIAS Online 3.3.17.11(sias_goa)</p>
 <img src="PSU.jpg" height="90px" width="90px">
 <h3>Partido State University</h3>
 <b><p class="b">Goa, Camarines Sur</p></b>
-<div class="d">
+<div class="d" id="d">
 <button class="b1">Administrator</button>
   
 <button class="b1">Instructor</button>
     
-<button class="b1">Student</button> 
+<button class="b1" onclick="btn()"id="ss">Student</button> 
 <button class="b1">Parent</button>
-<button class="b1">Admission</button> 
+<button class="b1">Admission</button>
+
 </div>
+
+<div class = "p" id="s">
+<p class="s" >Student</p>
+<p class="pp">User ID:</p>
+<input type="password" id="fname" name="fname" >
+<p class="uu">Password:</p>
+<input type="password" name="lname" class="k" >
+<button class="n" onclick = "location.href ='Parsu2.html ">
+  Login
+</button>
+</div>
+
 </body>
+<script>
+  let bu = document.getElementById("ss")
+
+  function btn(){
+    document.getElementById("s").style.visibility="visible";
+    document.getElementById("d").style.visibility = "hidden";
+  }
+</script>
 
 </html>
