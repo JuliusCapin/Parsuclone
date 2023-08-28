@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+*{
+  padding:0;
+  margin:0;
+}
+  .a{
+    background-color:yellow;
+    position: relative ;
+  }
+  button{
+    
+    background: transparent;
+    color:blue;
+    border:none;
+    margin-left: 3px;
+    font-size: 17px;
+  }
+  button:hover{
+    background-color:white;
+  }
+  p{
+    top:0;
+    position: absolute;
+    left:280px;
+  }
+
+a{
+  font-size: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  overflow: auto;
+  border:1px solid lightblue;
+}
+.dropdown-content1 {
+  margin-left:100px;
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  overflow: auto;
+  border:1px solid lightblue;
+}
+.dropdown-content1 a{
+      color: black;
+      padding: 5px 9px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content2 {
+  margin-left:166px;
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  overflow: auto;
+  border:1px solid lightblue;
+}
+.dropdown-content2 a{
+      color: black;
+      padding: 5px 9px;
+      text-decoration: none;
+      display: block;
+    }
+.dropdown-content a{
+      color: black;
+      padding: 5px 9px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.b1{
+  border-bottom:1px solid lightblue;
+   
+  
+}
+</style>
+<body>
+<div class="a">
+  <button onclick="t()">Transaction</button>
+  <button onclick="r()">Reports</button>
+  <button onclick="h()">Help</button>
+  <button>Log Out</button>
+<p>Welcome!</p>
+</div>
+ <div id="myDropdown" class="dropdown-content">
+   <a href="#home">Change Password</a>
+   <a href="#about" class="b1">Student Profile</a>
+   <a href="#about">Pre Enlistment</a>
+   <a href="#about">Enrollment</a>
+   <a href="#about">Add / Cross-Enroll / Drop Subject</a>
+   <a href="#about" class="b1">Assessment</a>
+    <a href="#about">Learning Modules</a>
+     <a href="#about">My Online Tasks</a>
+   <a href="#about" class="b1">My Test Scores</a>
+   <a href="#about">Teacher Evaluation</a>
+     <a href="#about">Disable ID Card</a>
+     <a href="#about">Online Payment(Dragon Pay)</a>
+    <a href="#about">Express Payment</a>
+ </div>
+ 
+ 
+  <div id="myDropdown1" class="dropdown-content1">
+    <a href="#home">Enrolled Subjects</a>
+    <a href="#about" class="b1">Class Absences</a>
+    <a href="#about">Term Grades (Math Curriculum)</a>
+    <a href="#about">Final Grades (Math Curriculum)</a>
+    <a href="#about" class="b1">General Weighted Average (Math Curriculum)</a>
+    <a href="#about" >Term Grades (Ignore Curriculum)</a>
+    <a href="#about">Final Grades (Ignore Curriculum)</a>
+    <a href="#about"class="b1">General Weighted Average (Ignore Curriculum)</a>
+    <a href="#about" >Curriculum Evaluation</a>
+    <a href="#about">Statements of Accounts</a>
+    <a href="#about">In/Out Monitoring</a>
+    <a href="#about">Purchase Report</a>
+    </div>
+    
+ <div id="myDropdown3" class="dropdown-content2">
+   <a href="#home">Support</a>
+   <a href="#about">About</a>
+ </div>
+</body>
+<script>
+  function t() {
+   document.getElementById("myDropdown").classList.toggle("show");
+   document.getElementById("myDropdown").style.visibility="visible";
+   document.getElementById("myDropdown1").classList.remove("show")
+   document.getElementById("myDropdown3").classList.remove("show");
+ }
+ function r(){
+   document.getElementById("myDropdown1").classList.toggle("show");
+   document.getElementById("myDropdown").style.visibility="hidden";
+   document.getElementById("myDropdown3").classList.remove("show");
+ }
+ function h(){
+   document.getElementById("myDropdown3").classList.toggle("show");
+   document.getElementById("myDropdown").classList.remove("show");
+   document.getElementById("myDropdown1").classList.remove("show");
+ }
+</script>
+</html>
