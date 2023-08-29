@@ -16,8 +16,8 @@
     text-align:right;
   }
   img{
-   margin-top:150px;
-   margin-left:138px;
+   margin-top:550px;
+   
   }
   h3{
 text-align: center;
@@ -31,7 +31,6 @@ text-align: center;
     width:250px;
     border:none;
     color:white;
-  margin-left:50px;
   margin-top:10px;
   border-radius: 15px;
   font-size: 17px;
@@ -114,13 +113,23 @@ input[type=password].k{
   font-weight: bold;
   font-size:17px;
 }
+  @media screen and (max-width:1280px){
+.d{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+}
 </style>
 <body>
 <p class="a">SIAS Online 3.3.17.11(sias_goa)</p>
-<img src="PSU.jpg" height="90px" width="90px">
+
+<div class="d" id="d">
+  <img src="PSU.jpg" height="90px" width="90px">
 <h3>Partido State University</h3>
 <b><p class="b">Goa, Camarines Sur</p></b>
-<div class="d" id="d">
 <button class="b1">Administrator</button>
   
 <button class="b1">Instructor</button>
@@ -137,7 +146,8 @@ input[type=password].k{
 <input type="password" id="fname" name="fname" >
 <p class="uu">Password:</p>
 <input type="password" name="lname" class="k" >
-<button class="n" onclick ="location.href ='Parsu2.html'">  Login
+<button class="n" onclick = "location.href ='Parsu3.html'">
+  Login
 </button>
 </div>
 
