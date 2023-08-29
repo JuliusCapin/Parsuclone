@@ -31,7 +31,7 @@
     color:#528CCBff;
     border:none;
     background: transparent;
-    margin-left:32px;
+    
   }
   .b1:hover{
     background-color:#DCEEEEff;
@@ -57,10 +57,12 @@
   .aa{
     margin-top:40px;
     display:flex;
-    
+    justify-content: space-around;
   }
   .aa2{
     margin-top:20px;
+    display: flex;
+    justify-content: space-around;
   }
   .b2{
     height:155px;
@@ -68,7 +70,7 @@
     color:#528CCBff;
     border:none;
     background: transparent;
-    margin-left:140px;
+   
   }
   .b3{
     height:155px;
@@ -89,9 +91,21 @@
     margin-top:23px;
     
   }
+  .aa3{
+    justify-content: center;
+  }
   .u{
     font-size: 14px;
   }
+  @media screen and (max-width:1280px){
+  .aa{
+    justify-content: space-around; }
+  .aa2{
+    justify-content: space-around;
+    }
+ .aa3{
+    text-align: center;
+    }
 </style>
 <body>
 <p class="a">Partido State University</p>
@@ -121,19 +135,22 @@
 
 </div>
 
-<div class="aa2">  <button class="b1" onclick="location.href = 'Parsu1.html'">
+<div class="aa2"> 
+<button class="b1" onclick="location.href = 'Parsu1.html'">
   <img src="PSU.jpg" class="i">
 <p>Sañgay</p>
 <p>Campus</p>
 <p class="c">Visit Site</p>
 </button>
+
   <button class="b1" onclick="location.href = 'Parsu1.html'">
   <img src="PSU.jpg" class="i">
 <p>Tinambac</p>
 <p>Campus</p>
 <p class="c">Visit Site</p>
 </button>
-  <button class="b3" onclick="location.href = 'Parsu1.html'">
+
+  <button class="b1" onclick="location.href = 'Parsu1.html'">
   <img src="PSU.jpg" class="i">
 <p>Caramoan</p>
 <p>Campus</p>
@@ -141,12 +158,15 @@
 </button>
 </div>
 
-  <button class="b2" onclick="location.href = 'Parsu1.html'">
-  <img src="PSU.jpg" class="i">
+<div class="aa3">
+ <button class="b2" onclick="location.href = 'Parsu1.html'">
+<img src="PSU.jpg" class="i">
 <p>Salogon</p>
 <p>Campus</p>
 <p class="c">Visit Site</p>
 </button>
+</div>
+
 </body>
 <script>
   
