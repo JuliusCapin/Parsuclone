@@ -88,6 +88,32 @@ a{
    
   
 }
+.ll{
+  /*visibility: hidden;*/
+ 
+  align-items:center;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  height:180px;
+  width:200px;
+  border:2px solid #A6C8ECff;
+  flex-direction:column;
+  
+}
+.k{
+  left:50px;
+  position: absolute;
+  border-bottom:2px solid #A6C8ECff;
+  
+}
+.ll button{
+    
+ font-size: 10px;
+ display:flex;
+}
 </style>
 <body>
 <div class="a">
@@ -98,7 +124,7 @@ a{
 <p>Welcome!</p>
 </div>
  <div id="myDropdown" class="dropdown-content">
-   <a href="#home">Change Password</a>
+   <button  onclick = "cb()">Change Password</button>
    <a href="#about" class="b1">Student Profile</a>
    <a href="#about">Pre Enlistment</a>
    <a href="#about">Enrollment</a>
@@ -133,8 +159,23 @@ a{
    <a href="#home">Support</a>
    <a href="#about">About</a>
  </div>
+    <div class="ll" id="ll">
+     <p class="k">q</p>
+ 
+   
+     <button>Old Password</button>
+     <input type="password">
+     <button>New Password</button>
+     <button>Retype New Password</button>
+    </div>
+ 
 </body>
 <script>
+    let ll = document.getElementById("ll")
+    function cb(){
+   ll.style.visibility = "visible";
+   //document.getElementById("myDropdown").classList.remove("show");
+    }
   function t() {
    document.getElementById("myDropdown").classList.toggle("show");
    document.getElementById("myDropdown").style.visibility="visible";
@@ -152,4 +193,4 @@ a{
    document.getElementById("myDropdown1").classList.remove("show");
  }
 </script>
-</html>
+  </html>
