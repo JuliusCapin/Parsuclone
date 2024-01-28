@@ -12,19 +12,21 @@
   margin:0;
 }
   .a{
-    background-color:yellow;
+    background-color: orange;
     position: relative ;
+    height:22px;
+    
   }
   button{
     
     background: transparent;
-    color:blue;
+    color:white;
     border:none;
-    margin-left: 3px;
-    font-size: 17px;
+    margin-left: 5px;
+    font-size: 16px;
   }
   button:hover{
-    background-color:white;
+    background-color: blueviolet;
   }
   p{
     top:0;
@@ -33,7 +35,10 @@
   }
 
 a{
-  font-size: 10px;
+  font-size: 14px;
+}
+a:hover{
+  background:blueviolet;
 }
 
 .dropdown-content {
@@ -42,16 +47,17 @@ a{
   background-color:white;
   min-width: 160px;
   overflow: auto;
-  border:1px solid lightblue;
+  border:0.5px solid black;
 }
 .dropdown-content1 {
   margin-left:100px;
   display: none;
   position: absolute;
   background-color:white;
-  min-width: 160px;
-  overflow: auto;
-  border:1px solid lightblue;
+  min-width: 300px;
+  overflow: hidden;
+  whitespace:nowrap;
+  border:0.5px solid black;
 }
 .dropdown-content1 a{
       color: black;
@@ -66,7 +72,7 @@ a{
   background-color:white;
   min-width: 160px;
   overflow: auto;
-  border:1px solid lightblue;
+  border:0.5px solid black;
 }
 .dropdown-content2 a{
       color: black;
@@ -80,51 +86,543 @@ a{
       text-decoration: none;
       display: block;
     }
-    .dropdown a:hover {background-color: #ddd;}
+    .dropdown a:hover {
+      background-color: #ddd;
+      
+    }
 
-.show {display: block;}
+
 .b1{
-  border-bottom:1px solid lightblue;
+  border-bottom:0.5px solid black;
    
   
 }
-.ll{
-  /*visibility: hidden;*/
- 
-  align-items:center;
-  position: relative;
-  display:flex;
-  justify-content: center;
-  text-align: center;
-  margin:auto;
-  height:180px;
-  width:200px;
-  border:2px solid #A6C8ECff;
-  flex-direction:column;
-  
-}
-.k{
-  left:50px;
+.es1{
   position: absolute;
-  border-bottom:2px solid #A6C8ECff;
+  display:none;
+  height:450px;
+  width:450px;
+  border:1px solid grey;
+  margin-top:15px;
+  max-height:120px;
+}
+.tg {
+  position: relative;
+  display: none;
+  height: 450px;
+  
+  border: 1px solid grey;
+  margin-top: 15px;
+  max-width:1500px;
+
+}
+.show {display: block;}
+.show1{
+  display:block;
+  width:1253px;
+}
+.en{
+  top:-17px;
+  white-space:nowrap;
+  left:2px;
+  position: absolute;
+  font-size:14px;
+  font-weight: bold;
+  border-bottom:1px solid #735894ff;
+}
+.upper{
+  margin-top:10px;
+  position: absolute;
+  margin-left:-260px;
+}
+.upper1{
+  margin-top:10px;
+  position: sticky;
+  margin-left:-260px;
+  left:0;
   
 }
-.ll button{
-    
- font-size: 10px;
- display:flex;
+
+.upper2{
+  margin-top:50px;
+  height: 400px;
+  
+  display: grid;
+  overflow-x:auto;
+  text-align: center;
+  grid-template-rows: 50px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+  grid-template-columns: 100px 250px 90px 90px 90px 90px 100px 100px 100px 100px 200px;
+  text-align:left;
+  font-size:14px;
 }
+.upper2 .item{
+  min-width: 100px;
+  
+  text-align: center;
+  grid-row:1;
+  font-weight: bold;
+  
+}
+
+.item23{
+ grid-row:9;
+  grid-column:1/12;
+  background:#50B1FEff;
+  border-bottom:1px solid;
+}
+.item24{
+ grid-row:10;
+  grid-column:1/12;
+  background:#50B1FEff;
+}
+.item22{
+  grid-row:2;
+  grid-column:2
+}
+.item2{
+  background:#50B1FEff;
+  grid-row:2;
+  grid-column:1/12;
+}
+
+.c1{
+  text-align:left;
+  border-bottom: 1px solid grey;
+  grid-row:3;
+  grid-column: 1;
+}
+.c2{
+  border-bottom: 1px solid grey;
+  grid-row:4;
+  grid-column: 1;
+}
+.c3{
+  border-bottom: 1px solid grey;
+  grid-row:5;
+  grid-column: 1;
+}
+.c4{
+  border-bottom: 1px solid grey;
+  grid-row: 6;
+  grid-column: 1;
+}
+.c5{
+  border-bottom: 1px solid grey;
+  grid-row: 7;
+  grid-column: 1;
+}
+.c6{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 1;
+}
+.r21{
+  border-bottom: 1px solid grey;
+  grid-row:3;
+  grid-column: 2;
+}
+.r22{
+  border-bottom: 1px solid grey;
+  grid-row:4;
+  grid-column: 2;
+}
+.r23{
+  border-bottom: 1px solid grey;
+  grid-row: 5;
+  grid-column: 2;
+}
+.r24{
+  border-bottom: 1px solid grey;
+  grid-row: 6;
+  grid-column: 2;
+}
+.r25{
+  border-bottom: 1px solid grey;
+  grid-row: 7;
+  grid-column: 2;
+}
+.r26{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 2;
+  
+}
+.t1{
+  text-align:center;
+  font-size: 16px;
+}
+.r33{
+  border-bottom:1px solid grey;
+  grid-row:3;
+  grid-column: 3;
+}
+.r34{
+  border-bottom:1px solid grey;
+  grid-row:4;
+  grid-column: 3;
+}
+.r35{
+  border-bottom:1px solid grey;
+  grid-row:5;
+  grid-column: 3;
+}
+.r36{
+  border-bottom: 1px solid grey;
+  grid-row: 6;
+  grid-column: 3;
+}
+.r37{
+  border-bottom: 1px solid grey;
+  grid-row: 7;
+  grid-column: 3;
+}
+.r38{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 3;
+}
+.t2 {
+  text-align:center;
+  font-size: 16px;
+}
+.r43{
+  border-bottom: 1px solid grey;
+  grid-row: 3;
+  grid-column: 4;
+}
+.r44{
+  border-bottom: 1px solid grey;
+  grid-row: 4;
+  grid-column: 4;
+}
+.r45{
+  border-bottom: 1px solid grey;
+  grid-row: 5;
+  grid-column: 4;
+}
+.r46{
+  border-bottom: 1px solid grey;
+  grid-row: 6;
+  grid-column: 4;
+}
+.r47{
+  border-bottom: 1px solid grey;
+  grid-row: 7;
+  grid-column: 4;
+}
+.r48{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 4;
+}
+.t3 {
+  text-align:center;
+  font-size: 16px;
+}
+.r53{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 5;
+}
+.r54{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 5;
+}
+.r55{
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 5;
+}
+.r56 {
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 5;
+}
+.r57 {
+  border-bottom: 1px solid grey;
+  grid-row: 8;
+  grid-column: 5;
+}
+.r58 {
+  border-bottom: 1px solid grey;
+  
+  
+}
+.t4{
+  text-align: center;
+  font-size: 16px;
+}
+.r63{
+  border-bottom: 1px solid grey;
+}
+.r64{
+  border-bottom: 1px solid grey;
+}
+
+.r65{
+  border-bottom: 1px solid grey;
+}
+.r66{
+  border-bottom: 1px solid grey;
+}
+.r67 {
+  border-bottom: 1px solid grey;
+}
+.r68{
+  border-bottom: 1px solid grey;
+}
+.ori{
+  text-align: center;
+  font-size: 16px;
+}
+.r73{
+  border-bottom: 1px solid grey;
+  grid-column: 1;
+  grid-row:8;
+}
+.r74{
+  border-bottom: 1px solid grey;
+}
+
+.r75{
+  border-bottom: 1px solid grey;
+}
+.r76{
+  border-bottom: 1px solid grey;
+}
+.r77 {
+  border-bottom: 1px solid grey;
+}
+.r78{
+  border-bottom: 1px solid grey;
+}
+.grad{
+  text-align:center;
+  font-size: 16px;
+}
+.r83{
+  border-bottom: 1px solid grey;
+  
+}
+.r84{
+  border-bottom: 1px solid grey;
+}
+
+.r85{
+  border-bottom: 1px solid grey;
+}
+.r86{
+  border-bottom: 1px solid grey;
+}
+.r87 {
+  border-bottom: 1px solid grey;
+}
+.r88{
+  border-bottom: 1px solid grey;
+}
+.grad1{
+  font-size:16px;
+}
+.upper p{
+  font-size:14px;
+}
+.nu{
+  color:grey;
+  margin-left:55px;
+  border-bottom:1px solid grey;
+}
+.nu1{
+  margin-left:55px;
+  border-bottom:1px solid #735894ff;
+  position:-webkit-sticky;
+  top:0;
+}
+.nu2{
+  margin-left:215px;
+  border-bottom:1px solid #735894ff;
+}
+.q{
+  margin-left:147px;
+  background: #4C71E3ff;
+  height:18px;
+  width:40px;
+  border-radius: 5px;
+  text-align: center;
+  color:white;
+}
+.q1{
+  margin-left:105px;
+  background: #4C71E3ff;
+  height:20px;
+  width:40px;
+  border-radius: 5px;
+  text-align: center;
+  color:white;
+  
+}
+.q2{
+  margin-left:278px;
+  background: #4C71E3ff;
+  height:20px;
+  width:60px;
+  border-radius: 5px;
+  text-align: center;
+  color:white;
+  padding:1px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.na{
+  margin-left:192px;
+}
+.le{
+  margin-left:170px;
+}
+
 </style>
 <body>
-<div class="a">
+<div class="a" id="aaa">
+  
   <button onclick="t()">Transaction</button>
   <button onclick="r()">Reports</button>
   <button onclick="h()">Help</button>
   <button>Log Out</button>
 <p>Welcome!</p>
 </div>
+ <div class="es1" id="es1">
+      <p class="en">Enrolled&nbsp;Subject</p>
+     <div class="upper">
+        <p>Student</p> 
+        <p class="nu">202220020&nbsp;&nbsp;&nbsp;</p>
+        <p class="q">?</p>
+        <p class="na">Capin,&nbsp;Julius&nbsp;Martin&nbsp;S.</p>
+      </div>
+    </div>
+    <div class ="tg" id="tg">
+        <p class="en">Term Grades&nbsp;(Match Curriculum)</p>
+        <div class="upper1">
+          <p>Period</p>
+          <p class="nu1">&nbsp;23-&nbsp;1&nbsp;&nbsp;</p>
+            <p class="q1">?</p>
+            <p class = "le">Level</p>
+            <p class = "nu2">College&nbsp;&nbsp;</p>
+            <p class="q2">Refresh</p>
+            
+        </div>
+        <div class ="upper2">
+          <div class ="item">
+            Code
+          </div>
+          <div class ="item">Name</div>
+          <div class ="item">1st <br> Term</div>
+          <div class ="item">2nd
+          <br>Term</div>
+          <div class ="item">3rd <br>Term</div>
+          <div class ="item">4th <br> Term</div>
+          <div class ="item">Orig Grade</div>
+          <div class ="item">Grade</div>
+        
+          <div class ="item">Units</div>
+          <div class ="item">Remark</div>
+          <div class ="item">Curriculum Evaluation</div>
+          <div class="item2">
+           
+            </div>
+            
+             <div class="item22">First&nbsp;Semester&nbsp;AY&nbsp;2023&nbsp;-2024</div>
+             
+          <div class="c1">DRAWT1</div>
+          <div class="c2">GE1</div>
+          <div class="c3">GE2</div>
+          <div class="c4">I-1</div>
+          <div class="c5">I-2</div>
+          <div class="c6">BAT1</div>
+          <div class="r21">Technical Drawing</div>
+          <div class="r22">Understanding the Self</div>
+          <div class="r23">Readings in Philippines History</div>
+          <div class="r24">General Chemistry</div>
+          <div class="r25">Pre-Calculus</div>
+          <div class="r26">Tools, Equipment and Welding Manage..</div>
+         
+         <div class="t1">
+           <div class ="r33">87</div>
+           <div class ="r34">85</div>
+           <div class ="r35">78</div>
+           <div class ="r36">81</div>
+           <div class ="r37">86</div>
+           <div class ="r38">84</div>
+          
+         </div>
+         <div class="t2">
+            <div class="r43">80</div>
+            <div class="r44">89</div>
+            <div class="r45">76</div>
+            <div class="r46">80</div>
+            <div class="r47">82</div>
+            <div class="r48">88</div>
+         </div>
+          <div class="t3">
+            <div class="r53">&nbsp;</div>
+            <div class="r54">&nbsp;</div>
+            <div class="r55">&nbsp;</div>
+            <div class="r56">&nbsp;</div>
+            <div class="r57">&nbsp;</div>
+            <div class="r58">&nbsp;</div>
+         </div>
+          <div class="t4">
+              <div class="r63">&nbsp;</div>
+              <div class="r64">&nbsp;</div>
+              <div class="r65">&nbsp;</div>
+              <div class="r66">&nbsp;</div>
+              <div class="r67">&nbsp;</div>
+                <div class="r68">&nbsp;</div>    </div>  
+               <div class="ori">
+           <div class="r73">&nbsp;</div>
+           <div class="r74">&nbsp;</div>
+           <div class="r75">&nbsp;</div>
+           <div class="r76">&nbsp;</div>
+           <div class="r77">&nbsp;</div>
+           <div class="r78">&nbsp;</div>
+          </div>
+          <div class="grad">
+           <div class="r83">1.90</div>
+           <div class="r84">2.0</div>
+           <div class="r85">2.90</div>
+           <div class="r86">2.50</div>
+           <div class="r87">2.25</div>
+           <div class="r88">2.10</div>
+          </div>
+        <div class="grad">
+          <div class="r83">1.0</div>
+          <div class="r84">3.0</div>
+          <div class="r85">3.0</div>
+          <div class="r86">1.0</div>
+          <div class="r87">4.0</div>
+          <div class="r88">2.0</div>
+        </div> 
+         <div class="grad1">
+           <div class="r83">PASSED</div>
+           <div class="r84">PASSED</div>
+           <div class="r85">PASSED</div>
+           <div class="r86">PASSED</div>
+           <div class="r87">PASSED</div>
+           <div class="r88">PASSED</div>
+          </div>
+          <div class="grad1">
+            <div class="r83">PASSED</div>
+            <div class="r84">PASSED</div>
+            <div class="r85">PASSED</div>
+            <div class="r86">PASSED</div>
+            <div class="r87">PASSED</div>
+            <div class="r88">PASSED</div>
+          </div>
+          <div class="item23"></div>
+          <div class="item24"></div>
+        </div>
+    </div>
  <div id="myDropdown" class="dropdown-content">
-   <button  onclick = "cb()">Change Password</button>
+   <a href="#home">Change Password</a>
    <a href="#about" class="b1">Student Profile</a>
    <a href="#about">Pre Enlistment</a>
    <a href="#about">Enrollment</a>
@@ -141,9 +639,10 @@ a{
  
  
   <div id="myDropdown1" class="dropdown-content1">
-    <a href="#home">Enrolled Subjects</a>
+    <a href="#home"  class="es" onclick ="es()">Enrolled Subjects</a>
+   
     <a href="#about" class="b1">Class Absences</a>
-    <a href="#about">Term Grades (Math Curriculum)</a>
+    <a href="#home" onclick="tg()">Term Grades (Math Curriculum)</a>
     <a href="#about">Final Grades (Math Curriculum)</a>
     <a href="#about" class="b1">General Weighted Average (Math Curriculum)</a>
     <a href="#about" >Term Grades (Ignore Curriculum)</a>
@@ -159,23 +658,8 @@ a{
    <a href="#home">Support</a>
    <a href="#about">About</a>
  </div>
-    <div class="ll" id="ll">
-     <p class="k">q</p>
- 
-   
-     <button>Old Password</button>
-     <input type="password">
-     <button>New Password</button>
-     <button>Retype New Password</button>
-    </div>
- 
 </body>
 <script>
-    let ll = document.getElementById("ll")
-    function cb(){
-   ll.style.visibility = "visible";
-   //document.getElementById("myDropdown").classList.remove("show");
-    }
   function t() {
    document.getElementById("myDropdown").classList.toggle("show");
    document.getElementById("myDropdown").style.visibility="visible";
@@ -192,5 +676,16 @@ a{
    document.getElementById("myDropdown").classList.remove("show");
    document.getElementById("myDropdown1").classList.remove("show");
  }
+ function es(){
+   document.getElementById("es1").classList.toggle("show");
+   document.getElementById("myDropdown1").classList.remove("show");
+   document.getElementById("tg").classList.remove("show");
+ }
+ function tg(){
+   document.getElementById("tg").classList.toggle("show");
+   
+   document.getElementById("es1").classList.remove("show");
+   document.getElementById("myDropdown1").classList.remove("show");
+ }
 </script>
-  </html>
+</html>
