@@ -12,8 +12,9 @@
     margin:0;
   }
   .a{
-    background-color:yellow;
+    background-color:orange;
     text-align:right;
+    height:23px;
   }
   
   h3{
@@ -34,58 +35,95 @@ text-align: center;
   font-weight:bold;
   
   }
-
+  .d{
+   position:relative;
+  }
   .s{
-    color:blue;
-    border: 2px solid blue;
+    color:white;
+    border:none;
+    background:#4C71E3ff;
     height:19px;
     width:230px;
-    /*position:absolute;*/
-  
+    position:absolute;
+    top:315px;
     padding-top:7px;
     padding-bottom:7px;
     font-size:17px;
+    margin-left:63px;
     font-weight: bold;
     font-size: 17px;
-    align-content:center;
+    border-radius: 15px;
   }
   .p{
-    text-align: center;
-
+   text-align: center;
+   visibility:hidden;
    
   }
-
+  .pp{
+   margin-left:110px;
+   position: absolute;
+   top:360px;
+   
+  }
+ 
+    
+  
   input[type=password] {
   width: 150px;
   height:32px;
+  left:100px;
   box-sizing: border-box;
-  border: 1px solid grey;
-  border-radius: 4px;
+  
+  
+  margin-left: 1px;
+  margin-left:10px;
+  position: absolute;
+  top:380px;
   font-weight:bold;
   font-size: 17px;
+  border:none;
+  border-bottom: 0.5px solid blue;
 }
-
+.uu{
+  margin-left:110px;
+   position: absolute;
+   top:420px;
+}
 input[type=password].k{
   width: 150px;
   height:32px;
-  
+  left:100px;
   box-sizing: border-box;
-  border: 1px solid grey;
-  border-radius: 4px;
+  margin-left: 1px;
+  margin-left:10px;
+  position: absolute;
+  top:440px;
   font-weight: bold;
+  border:none;
+  border-bottom:0.5px solid blue;
+}
+input[type="password"]:focus{
+  outline:none;
 }
 .n{
- 
+  position: absolute ;
   height:38px;
   width:150px;
   background-color:#51B1FEff;
   border:none;
   color:white;
   border-radius:15px;
-  
+  top:485px;
+  left:110px;
   font-weight: bold;
   font-size:17px;
 }
+
+
+
+@media screen and (max-width:1280px) {
+
+   
 .d{
   display:flex;
   flex-direction: column;
@@ -93,81 +131,22 @@ input[type=password].k{
   justify-content: center;
   align-items: center;
 }
-.p{
-  display:flex;
-
-}
-input[type=password] {
-  display:flex;
-  flex-direction: column;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}
-.ss{
-  align-content:center;
-}
-img{
-   
-   margin-top:150px;
-  }
-@media screen and (max-width:1280px) {
-
-  
-.ss{
-  align-content:center;
-  margin-top:none;
-
-}
-.p{
-  
-  display:flex;
-  flex-direction: column;
-  text-align:center;
-  justify-content: center;
-  align-items: center;
-  
-}
-input[type=password] {
-  display:flex;
-
-}
 img{
    
    margin-top:150px;
   }
 }
 
- .p{
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  visibility: hidden;
-  margin-top: 350px;
-  position: absolute;
- cursor:pointer;
-}
-
-
-.bu{
- align-items: center;
- justify-content: center;
-flex-direction: column;
- display:flex;
-
-}
 </style>
 <body>
-<p class="a">SIAS Online 3.3.17.11(sias_goa)</p>
+<p class="a">SIAS Online 3.4.11.1(sias_goa)</p>
 
 <div class="d" id="d">
- 
   <div id ="p">
   <img src="PSU.jpg" height="90px" width="90px">
 <h3>Partido State University</h3>
 <b><p class="b">Goa, Camarines Sur</p></b>
   </div>
-  <div class="bu">
 <button class="b1">Administrator</button>
   
 <button class="b1">Instructor</button>
@@ -179,30 +158,25 @@ flex-direction: column;
 </div>
 
 <div class = "p" id="s">
-  <div class="ss">
 <p class="s" >Student</p>
 <p class="pp">User ID:</p>
-<input type="password" class="fname" id="fname" >
+<input type="password" id="fname" name="fname" >
 <p class="uu">Password:</p>
-<input type="password" class="k" >
+<input type="password" name="lname" class="k" >
 <button class="n" onclick = "location.href ='Parsu2.html'">
   Login
 </button>
 </div>
-</div>
-</div>
+
 </body>
 <script>
   let bu = document.getElementById("ss")
 
   function btn(){
-    document.getElementById("p").classList.toggle("show");
-    document.getElementById("d").classList.remove("show");
     document.getElementById("s").style.visibility="visible";
     document.getElementById("d").style.visibility = "hidden";
     document.getElementById("p").style.visibility="visible";
- 
   }
 </script>
 
-  </html>
+</html>
